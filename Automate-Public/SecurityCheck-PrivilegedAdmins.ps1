@@ -22,4 +22,5 @@ Function Get-PrivilegedGroupChanges {
                 
                 
     # Last 24 hours            
-    Get-PrivilegedGroupChanges | format-list -Property Groupname,AttributeValue,LastOriginatingChangeTime,Server
+    $results = Get-PrivilegedGroupChanges | format-list -Property Groupname,AttributeValue,LastOriginatingChangeTime,Server
+    Write-Host $results
