@@ -10,7 +10,7 @@ New-Item $FolderName -ItemType Directory
 }
 
 #mkdir c:\Automate
-$url = 'https://digacore.hostedrmm.com/LabTech/Deployment.aspx?InstallerToken=d2ca796dbc8a489aae08ee6e4e49727c'
+$url = 'https://github.com/digacoretechnology/ltscripts/raw/5bd4a6b975070635e5c6b1fcab7c502fc75d3bb3/Automate-Install/Agent_Install.MSI'
 $output = 'C:\Automate\Automate.msi'
 Start-BitsTransfer -Source $url -Destination $output
 
